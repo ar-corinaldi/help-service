@@ -148,13 +148,13 @@ function Profile(props) {
                                 <span className="detalles-text">{user.email}</span>
                             </li>
                             <li>
-                                <span className="detalles-label">Genero </span>
+                                <span className="detalles-label">Género </span>
                                 <span className="detalles-text">{user.gender}</span>
                             </li>
                             {(own || props.solicitudes.filter((ele) => ele.userid === user.email && ele.selected && ele.selected.id === props.user.email).length>0) &&
                                 <>
                                     <li>
-                                        <span className="detalles-label">Numero </span>
+                                        <span className="detalles-label">Número </span>
                                         <span className="detalles-text">{user.phone}</span>
                                     </li>
                                     <li>
@@ -164,7 +164,7 @@ function Profile(props) {
                                 </>
                             }
                             <li>
-                                <span className="detalles-label">Numero de reportes </span>
+                                <span className="detalles-label">Número de reportes </span>
                                 <span className="detalles-text text-danger">{reports.length}</span>
                             </li>
                         </ul>
